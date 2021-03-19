@@ -1,4 +1,4 @@
-import { ISpecificationsRepository } from '../repositories/ISpecifications.repository';
+import { ISpecificationsRepository } from '../repositories/interfaces/ISpecifications.repository';
 
 interface IRequest {
   name: string;
