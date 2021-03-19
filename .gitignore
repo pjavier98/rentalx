@@ -1,6 +1,7 @@
 # Vscode
 .vscode
 tmp/*
+!tmp/.gitkeep
 
 # Logs
 logs
