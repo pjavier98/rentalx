@@ -2,7 +2,6 @@ import { compare } from 'bcryptjs';
 import { sign } from 'jsonwebtoken';
 import { inject, injectable } from 'tsyringe';
 
-import { User } from '../../entities/user.entity';
 import { UsersRepository } from '../../repositories/implementations/users.repository';
 
 interface IRequest {
@@ -42,15 +41,13 @@ class AuthenticateUserUseCase {
       expiresIn: '1d',
     });
 
-    const tokenReturn: IResponse = {
+    return {
       token,
       user: {
         name: user.name,
         email: user.email,
       },
     };
-
-    return tokenReturn;
   }
 }
 
