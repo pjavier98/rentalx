@@ -1,5 +1,5 @@
 import { Router } from 'express';
-import { ensureAuthenticatedMiddleware } from 'middlewares/ensureAuthenticated.middleware';
+import { ensureAuthenticatedMiddleware } from 'shared/infra/http/middlewares/ensureAuthenticated.middleware';
 
 import { authenticateRoutes } from './authenticate.routes';
 import { categoriesRoutes } from './categories.routes';
